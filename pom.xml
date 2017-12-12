@@ -20,7 +20,9 @@
 
 	<!-- 进行聚合的子项目 -->
 	<modules>
-
+		<module>config-server</module>
+		<module>config-eureka</module>
+		<module>config-luck</module>
 	</modules>
 
 	<properties>
