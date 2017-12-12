@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: config-server
+
+  profiles:
+    active: $spring.profiles.active$
+
+server:
+  port: 8002
