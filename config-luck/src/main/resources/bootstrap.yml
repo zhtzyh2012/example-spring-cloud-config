@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    config:
+      # 以uri作为前缀,表示配置中心的位置
+      uri: http://localhost:8002
+      # 查询对应的文件名称
+      name: service-luck
+      # 分支名称, 默认分支名称是master
+      # label: master
+      # 什么环境,获取spring.profiles.active的变量值
+      # 如果想获取application.yml中的变量值,使用下面的形式${}
+      profile: ${spring.profiles.active}
