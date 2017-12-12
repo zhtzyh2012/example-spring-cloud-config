@@ -2,8 +2,19 @@ spring:
   application:
     name: config-server
 
+  cloud:
+    config:
+      server:
+        git:
+          # 以uri作为前缀
+          uri: https://github.com/zhtzyh2012/example-spring-cloud-config-files/
+          # 相对地址,uri下面的配置文件,后缀名称
+          # search-paths: #相对路径 #user-service, hello-service, luck-service
+          searchPaths: luck-service-url
+
   profiles:
     active: $spring.profiles.active$
 
 server:
   port: 8002
+

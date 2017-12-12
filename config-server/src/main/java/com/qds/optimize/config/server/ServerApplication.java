@@ -10,7 +10,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  *
  * @author neutron
  */
-//@EnableConfigServer
+@EnableConfigServer
 @EnableEurekaClient
 @SpringBootApplication
 public class ServerApplication {
